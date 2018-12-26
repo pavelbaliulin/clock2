@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="vos"><div class="strelka"></div></div>
+    <div class="zero">0</div>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="for">4</div>
+    <div class="fife">5</div>
+    <div class="six">6</div>
+    <div class="seven">7</div>
+    <div class="echt">8</div>
+    <div class="nine">9</div>
+    <div class="desat">10</div>
+    <div class="ill">11</div>
+    <style>
+      body > div:nth-child(n + 2) {
+        border-radius: 50%;
+        border: 2px solid black;
+        height: 15px;
+        width: 19px;
+        margin: auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .vos {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 192px;
+      }
+      .strelka {
+        height: 40%;
+        left: 49%;
+        background: #000;
+        margin: auto;
+        animation: strelka 12s linear 1;
+        display: flex;
+        transform-origin: 50% 100%;
+        top: 10%;
+        width: 2%;
+        position: absolute;
+      }
+      .one {
+        animation: numbers 11s linear 1;
+        animation-delay: 1s;
+        top: 190px;
+        left: 642px;
+      }
+      .zero {
+        animation: numbers 12s linear 1;
+        top: 182px;
+        left: 608px;
+      }
+      .two {
+        animation: numbers 10s linear 1;
+        animation-delay: 2s;
+        top: 210px;
+        left: 663px;
+      }
+      .three {
+        animation: numbers 9s linear 1;
+        animation-delay: 3s;
+        top: 239px;
+        left: 671px;
+      }
+      .for {
+        animation: numbers 8s linear 1;
+        animation-delay: 4s;
+        top: 271px;
+        left: 663px;
+      }
+      .fife {
+        animation: numbers 7s linear 1;
+        animation-delay: 5s;
+        top: 292px;
+        left: 642px;
+      }
+      .six {
+        animation: numbers 6.1s linear 1;
+        animation-delay: 6s;
+        top: 302px;
+        left: 608px;
+      }
+      .seven {
+        animation: numbers 5s linear 1;
+        animation-delay: 7s;
+        top: 292px;
+        left: 574px;
+      }
+      .echt {
+        animation: numbers 4s linear 1;
+        animation-delay: 8s;
+        top: 271px;
+        left: 554px;
+      }
+      .nine {
+        animation: numbers 3s linear 1;
+        animation-delay: 9s;
+        top: 239px;
+        left: 546px;
+      }
+      .desat {
+        animation: numbers 2s linear 1;
+        animation-delay: 10s;
+        top: 210px;
+        left: 555px;
+      }
+      .ill {
+        animation: numbers 1s linear 1;
+        animation-delay: 11s;
+        top: 190px;
+        left: 575px;
+      }
+      @keyframes strelka {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes numbers {
+        0% {
+          background-color: green;
+          color: black;
+        }
+        99% {
+          background-color: green;
+          color: black;
+        }
+        100% {
+          background-color: white;
+        }
+      }
+    </style>
+  </body>
+</html>
